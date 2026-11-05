@@ -224,27 +224,21 @@ body.qopen{overflow:hidden}
   <div class="badges-bar"><div class="wrap"><div class="badges"><span>ADR certified</span><span>Licensed waste transport</span><span>Euro 5 vacuum fleet</span><span>24/7 emergency</span></div></div></div>
 </header>
 
-<!-- Стилна секция за калкулатора с имитация на телефонен екран -->
-<section id="calculator-section" style="background-color: #000; padding: 60px 20px; display: flex; justify-content: center; align-items: center;">
-    
-    <!-- Външна рамка на телефон (iPhone Mockup стил) -->
-    <div style="width: 100%; max-width: 420px; background: #121212; border-radius: 40px; padding: 15px; box-shadow: 0 20px 50px rgba(0,0,0,0.8), 0 0 0 2px #333; position: relative;">
+<!-- iPhone Mockup Price Calculator Container -->
+<div style="display: flex; justify-content: center; align-items: center; margin: 50px 0; padding: 0 15px;">
+    <div style="position: relative; width: 340px; height: 680px; background: #1c1c1e; border-radius: 46px; padding: 12px; box-shadow: 0 25px 60px rgba(0,0,0,0.8), inset 0 0 0 2px #3a3a3c, inset 0 0 0 6px #1c1c1e; border: 4px solid #2c2c2e;">
         
-        <!-- Горен говорител / камера (тип "Notch/Island" за разкош) -->
-        <div style="width: 120px; height: 20px; background: #000; margin: 0 auto 10px auto; border-radius: 10px;"></div>
-
-        <!-- Вътрешен екран, в който се зарежда/побира приложението на калкулатора -->
-        <div style="width: 100%; background: #000; border-radius: 30px; overflow-y: auto; max-height: 750px; border: 1px solid #222;">
-            
-            <!-- Тук вмъквате или вграждате вашия iframe / съдържание на калкулатора -->
-            <iframe src="https://calculator.nbhydrologistics.com" style="width: 100%; height: 700px; border: none; background: transparent;" title="Instant Price Calculator"></iframe>
-
+<!-- iPhone Dynamic Island / Speaker Notch -->
+        <div style="position: absolute; top: 20px; left: 50%; transform: translateX(-50%); width: 100px; height: 25px; background: #000; border-radius: 16px; z-index: 10; display: flex; align-items: center; justify-content: flex-end; padding-right: 8px;">
+            <div style="width: 10px; height: 10px; background: #111; border-radius: 50%; box-shadow: inset 0 0 2px #333;"></div>
         </div>
-        
-        <!-- Долна лента за домашен екран (Home Indicator) -->
-        <div style="width: 130px; height: 4px; background: #444; margin: 12px auto 5px auto; border-radius: 2px;"></div>
 
+<!-- Screen Frame -->
+        <div style="width: 100%; height: 100%; background: #000; border-radius: 36px; overflow: hidden; position: relative;">
+            <iframe src="https://calculator.nbhydrologistics.com" style="width: 100%; height: 100%; border: none; background: #000;" title="NB Hydro Logistics Calculator"></iframe>
+        </div>
     </div>
+</div>
 </section>
   
 <div class="band" id="about"><section><div class="wrap two"><div><h2>About <span class="red">us</span></h2><p>NB Hydro Logistics is a specialist vacuum tanker, drainage and wastewater services business in Dublin ,Ireland built around reliable planning, safety and responsible waste handling.</p><p>[Company story, mission and vision — to be supplied.]</p></div><ul class="list"><li>Professional standards</li><li>Safety first</li><li>Responsible waste management</li><li>Clear customer communication</li></ul></div></section></div>
